@@ -1,5 +1,6 @@
 body{
-    background-color: #002200;
+    background-color: #f0dd00
+    
 }
 table {
     padding: 18px;
@@ -11,17 +12,39 @@ table {
     padding-left: 30px;
     padding-right: 30px;
     margin: 20px;
-    background-color:brown;
+    background-color:#ff00ff;
 }
 
 #Class {
     text-align: center;
 }
 
-#statBlock{
+.modifier{
     text-align: center;
 }
 
-th, td, p, h2{
-    color: aliceblue;
+table{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    border-collapse:collapse;
+}
+
+td,th{
+    border-style: solid;
+    border-width: thick;
+    border-color:#00fFff;
+    padding: 10px 10px 10px 10px;
+}
+
+.value{
+    text-align: center;
+}
+
+h1{
+    color: ffd3d3;
+}
+
+th, td, p{
+    color: #00ffcc;
 }
