@@ -1,0 +1,27 @@
+body{
+    background-color: #002200;
+}
+table {
+    padding: 18px;
+}
+
+#Class p{
+    display:inline-block;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+    background-color:brown;
+}
+
+#Class {
+    text-align: center;
+}
+
+#statBlock{
+    text-align: center;
+}
+
+th, td, p, h2{
+    color: aliceblue;
+}
