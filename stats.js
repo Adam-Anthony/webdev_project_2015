@@ -16,17 +16,23 @@ window.onload = function() {
 	document.getElementById("wisSelect").innerHTML = options;
 	document.getElementById("chaSelect").innerHTML = options;
 	
-	document.getElementById("strSelectMod").innerHTML = "DO IT";
-	document.getElementById("dexSelectMod").innerHTML = "JUST DO IT";
-	document.getElementById("conSelectMod").innerHTML = "DON'T LET YOUR DREAMS";
-	document.getElementById("intSelectMod").innerHTML = "BECOME DREAMS";
-	document.getElementById("wisSelectMod").innerHTML = "YESTERDAY YOU SAID TOMMOROW";
-	document.getElementById("chaSelectMod").innerHTML = "SO JUST DO IT";
+    document.getElementById("modhead").innerHTML = "JUST";
+	document.getElementById("strSelectMod").innerHTML = "DO";
+	document.getElementById("dexSelectMod").innerHTML = "IT";
+	document.getElementById("conSelectMod").innerHTML = "JUST DO IT";
+	document.getElementById("intSelectMod").innerHTML = "DON'T LET YOUR DREAMS";
+	document.getElementById("wisSelectMod").innerHTML = "BECOME";
+	document.getElementById("chaSelectMod").innerHTML = "DREAMS";
 	
 	
 	
 }
 
 function modClick(thisMod) {
-	document.getElementById(thisMod.id+"Mod").innerHTML = "+"+((thisMod.options[thisMod.selectedIndex].value-10)/2);
+    var modVal = parseInt((thisMod.options[thisMod.selectedIndex].value-10)/2);
+    if (modVal >= 0){
+	   document.getElementById(thisMod.id+"Mod").innerHTML = "+" + modVal;
+    }else{
+        document.getElementById(thisMod.id+"Mod").innerHTML = "" + modVal;
+    }
 }
