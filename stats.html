@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Character Creation</title>
+        <link rel="stylesheet" href="stats.css" type="text/css">
+		<script src="stats.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Step 2. Determine Ability Scores</h1>
+        <div id="statBlock">
+            <table>
+                <tr>
+                    <th>Stat</th>
+                    <th>Value</th>
+                    <th>Modifier</th>
+                </tr>
+                <tr>
+                    <td>Strength</td>
+                    <td class="value">
+						<select id="strSelect" onclick="modClick(this)">
+						</select>
+					</td>
+                    <td class="modifier" id="strSelectMod">+0</td>
+                </tr>
+                <tr>
+                    <td>Dexterity</td>
+                    <td class="value">
+						<select id="dexSelect" onclick="modClick(this)">
+						<option>DEFAULT</option>
+						</select>
+					</td>
+                    <td class="modifier" id="dexSelectMod">+0</td>
+                </tr>
+                <tr>
+                    <td>Constitution</td>
+                    <td class="value">
+						<select id="conSelect" onclick="modClick(this)">
+						<option>DEFAULT</option>
+						</select>
+					</td>
+                    <td class="modifier" id="conSelectMod">+0</td>
+                </tr>
+                <tr>
+                    <td>Intelligence</td>
+                    <td class="value">
+						<select id="intSelect" onclick="modClick(this)">
+						<option>DEFAULT</option>
+						</select>
+					</td>
+                    <td class="modifier" id="intSelectMod">+0</td>
+                </tr>
+                <tr>
+                    <td>Wisdom</td>
+                    <td class="value">
+						<select id="wisSelect" onclick="modClick(this)">
+						<option>DEFAULT</option>
+						</select>
+					</td>
+                    <td class="modifier" id="wisSelectMod">+0</td>
+                </tr>
+                <tr>
+                    <td>Charisma</td>
+                    <td class="value">
+						<select id="chaSelect" onclick="modClick(this)">
+						<option>DEFAULT</option>
+						</select>
+					</td>
+                    <td class="modifier" id="chaSelectMod">+0</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
