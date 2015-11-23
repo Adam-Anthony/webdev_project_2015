@@ -1,5 +1,5 @@
 body{
-    background-color: #f0dd00
+    background-color: #9566F4
     
 }
 table {
@@ -12,39 +12,12 @@ table {
     padding-left: 30px;
     padding-right: 30px;
     margin: 20px;
-    background-color:#ff00ff;
+    border-style: solid;
+    border-width: thick;
+    border-color:#B5E8E8;
 }
 
 #Class {
     text-align: center;
 }
 
-.modifier{
-    text-align: center;
-}
-
-table{
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-    border-collapse:collapse;
-}
-
-td,th{
-    border-style: solid;
-    border-width: thick;
-    border-color:#00fFff;
-    padding: 10px 10px 10px 10px;
-}
-
-.value{
-    text-align: center;
-}
-
-h1{
-    color: ffd3d3;
-}
-
-th, td, p{
-    color: #00ffcc;
-}

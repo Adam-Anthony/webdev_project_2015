@@ -1,0 +1,27 @@
+body {
+ background-color: #9566F4   
+}
+
+.topHeading {
+    color: #ffd3d3;
+}
+
+th, td, p {
+    color: #E0F5F5;
+}
+
+#next{
+    float: right;
+    margin-right: 10%;
+    padding: 15px;
+}
+
+#back{
+    float: left;
+    margin-left: 10%;
+    padding: 15px;
+}
+
+#incorrectPoints{
+    text-align: center;
+}
