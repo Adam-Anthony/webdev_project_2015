@@ -4,13 +4,14 @@
         <title>Character Creation</title>
         <link rel="stylesheet" href="main.css" type="text/css">
         <link rel="stylesheet" href="colourStyle.css" type="text/css">
+        <script src="main.js" type="text/javascript"></script>
     </head>
     <body>
         <h1 class="topHeading">Step 1. Choose a class and starting stats</h1>
         <div id="Class">
-            <p>Fighter</p>
-            <p>Rogue</p>
-            <p>Wizard</p>
+            <p onclick="chooseClass(this, 'fighter')">Fighter</p>
+            <p onclick="chooseClass(this, 'rogue')">Rogue</p>
+            <p onclick="chooseClass(this, 'wizard')">Wizard</p>
         </div>
     </body>
 </html>

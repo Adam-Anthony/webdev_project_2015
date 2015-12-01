@@ -61,6 +61,9 @@ function nextStep(thisMod) {
     }
 }
 
+function backStep(modval){
+    location.href= "classStats.html";
+}
 function convertPointBuy(value){
     if(value==8){ return 0;}
     if(value==9){ return 1;}
