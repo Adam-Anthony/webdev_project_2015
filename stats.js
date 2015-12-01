@@ -78,8 +78,10 @@ function nextStep(thisMod) {
         location.href = "equipment.html";
     }else if (points <= 27){
         var tmpText = "You have " + (27-points) + " points left.";
-        confirm(tmpText + " Are you sure you want to continue?")
         document.getElementById("incorrectPoints").innerHTML = tmpText;
+        if (confirm(tmpText + " Are you sure you want to continue?")){
+            location.href = "equipment.html";
+        }
     }else{
         document.getElementById("incorrectPoints").innerHTML = "You spent too many points (" + points + ")";
     }
