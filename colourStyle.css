@@ -1,13 +1,13 @@
 body {
- background-color: #9566F4   
+ background-color: #8c684E
 }
 
 .topHeading {
-    color: #ffd3d3;
+    color: #4DFFFE;
 }
 
 th, td, p {
-    color: #E0F5F5;
+    color: #ffcf35;
 }
 
 #next{
