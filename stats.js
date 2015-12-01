@@ -1,6 +1,6 @@
 window.onload = function () {
 	var options = "";
-	for (var i = 4; i < 21; i++) {
+	for (var i = 8; i < 16; i++) {
 		if (i===10) {
 			options += "<option selected=\"selected\">"+i+"</option>";
 		} else {
@@ -28,12 +28,50 @@ window.onload = function () {
 //Implement a system to check the points and make sure they don't go over before proceeding to next phase.
 function nextStep(thisMod) {
     //Grab the values and map out the total spent points
-    if (true){
-        //Next Page
-        //Placeholder
+    var points = 0;
+    
+    var tempObj, tempValue;
+    temp = document.getElementById("strSelect");
+    tempValue = temp.options[ temp.selectedIndex ].value;
+    points += convertPointBuy(tempValue);
+    
+    temp = document.getElementById("dexSelect");
+    tempValue = temp.options[ temp.selectedIndex ].value;
+    points += convertPointBuy(tempValue);
+    
+    temp = document.getElementById("chaSelect");
+    tempValue = temp.options[ temp.selectedIndex ].value;
+    points += convertPointBuy(tempValue);
+    
+    temp = document.getElementById("intSelect");
+    tempValue = temp.options[ temp.selectedIndex ].value;
+    points += convertPointBuy(tempValue);
+    
+    temp = document.getElementById("wisSelect");
+    tempValue = temp.options[ temp.selectedIndex ].value;
+    points += convertPointBuy(tempValue);
+    
+    temp = document.getElementById("conSelect");
+    tempValue = temp.options[ temp.selectedIndex ].value;
+    points += convertPointBuy(tempValue);
+    if (points <= 27){
         document.getElementById("incorrectPoints").innerHTML = "Good";
     }else{
         document.getElementById("incorrectPoints").innerHTML = "You spent too many points";
+    }
+}
+
+function convertPointBuy(value){
+    if(value==8){ return 0;}
+    if(value==9){ return 1;}
+    if(value==10){ return 2;}
+    if(value==11){ return 3;}
+    if(value==12){ return 4;}
+    if(value==13){ return 5;}
+    if(value==14){ return 7;}
+    if(value==15){ return 9;}
+    else{
+        return 10000;
     }
 }
 
