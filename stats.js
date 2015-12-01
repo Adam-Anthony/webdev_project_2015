@@ -77,7 +77,8 @@ function nextStep(thisMod) {
     if (points == 27){
         location.href = "equipment.html";
     }else if (points <= 27){
-        var tmpText = "You have " + (27-points) + " points left";
+        var tmpText = "You have " + (27-points) + " points left.";
+        confirm(tmpText + " Are you sure you want to continue?")
         document.getElementById("incorrectPoints").innerHTML = tmpText;
     }else{
         document.getElementById("incorrectPoints").innerHTML = "You spent too many points (" + points + ")";
@@ -91,7 +92,7 @@ function convertPointBuy(value){
     if(value==8){ return 0;}
     if(value==9){ return 1;}
     if(value==10){ return 2;}
-    if(value==11){ return 3;}s
+    if(value==11){ return 3;}
     if(value==12){ return 4;}
     if(value==13){ return 5;}
     if(value==14){ return 7;}
