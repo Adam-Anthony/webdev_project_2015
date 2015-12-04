@@ -41,14 +41,48 @@ window.onload = function () {
 		document.getElementById("choice2").innerHTML = "<form><input type=\"radio\" name=\"two\" value=\"shortbow\">Shortbow + 20 Arrows<br><input type=\"radio\" name=\"two\" value=\"shortsword\">Short Sword</form>";
 		document.getElementById("choice3").innerHTML = "<form><input type=\"radio\" name=\"three\" value=\"Dungeoneer\">Dungeoneer's Pack<br><input type=\"radio\" name=\"three\" value=\"Explorer\">Explorer's Pack<br><input type=\"radio\" name=\"three\" value=\"Burglar\">Burglar's Pack</form>";
 		document.getElementById("choice4").innerHTML = "Leather armor, two daggers, and thieves' tools";
+		document.getElementById("hide4").style.display = "none";
 	} else if (classType=="barbarian") {
 		document.getElementById("choice1").innerHTML = "<form><input type=\"radio\" name=\"one\" value=\"greataxe\">Greataxe<br><input type=\"radio\" name=\"one\" value=\"martialmelee\">" + martial_melee + "</form>";
 		document.getElementById("choice2").innerHTML = "<form><input type=\"radio\" name=\"two\" value=\"handaxes\">Two Handaxes<br><input type=\"radio\" name=\"two\" value=\"simplemelee\">"+simple_melee+"</form>";
 		document.getElementById("choice3").innerHTML = "An Explorer's Pack";
 		document.getElementById("choice4").innerHTML = "Four Javelins";
+		document.getElementById("hide3").style.display = "none";
+		document.getElementById("hide4").style.display = "none";
 	}
 }
 
 function backStep(thismod){
     location.href ="stats.html"
+}
+
+function frontStep(thismod){
+    location.href ="final.html";
+	var classEquipment = "";
+	var radios = document.getElementByName("one");
+	for (var i = 0; i < radios.length; i++) {
+		if (radios[i].checked) {
+			classEquipment += radios[i].innerHTML;
+			alert(radios[i].value);
+		}
+	}
+	var radios = document.getElementByName("two");
+	for (var i = 0; i < radios.length; i++) {
+		if (radios[i].checked) {
+			classEquipment += radios[i].innerHTML;
+		}
+	}
+	var radios = document.getElementByName("three");
+	for (var i = 0; i < radios.length; i++) {
+		if (radios[i].checked) {
+			classEquipment += radios[i].innerHTML;
+		}
+	}
+	var radios = document.getElementByName("four");
+	for (var i = 0; i < radios.length; i++) {
+		if (radios[i].checked) {
+			classEquipment += radios[i].innerHTML;
+		}
+	}
+	sessionStorage.setItem('classEquipment', classEquipment);
 }
