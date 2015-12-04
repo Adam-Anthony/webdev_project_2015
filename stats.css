@@ -20,6 +20,10 @@ td,th{
     padding: 10px 10px 10px 10px;
 }
 
+h3{
+    color: #46423f;
+}
+
 .value{
     text-align: center;
 }
