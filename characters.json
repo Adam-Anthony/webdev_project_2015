@@ -1,39 +1,40 @@
 {
-	"classes":[
-	{"name":"Barbarian", "hitDice":"12", "armor": "Light, Medium, shields", "weapons": "Simple weapons, martial weapons",
-	"tools":"None", "savingThrow":["Str", "Con"], "skillAmount":"2", "skillIds":["0","1","2","3","4","5"]
-	}
-	{"name": "Fighter", "hitDice":"10", "armor":"All armor, shields", "weapons": "Simple weapons, martial weapons",
-	"tools": "None", "savingThrow":["Str", "Con"], "skillAmount":"2", "skillIds":["6","0","1","2","4","5","7","8"]
-	}
-]}
+ "classType":[
+    {"name":"Barbarian", "hitDice":"12", "armor": "Light, Medium, shields", "weapons": "Simple weapons, martial weapons",
+        "tools":"None", "savingThrow":["Str", "Con"], "skillAmount":"2", "skillIds":["0","1","2","3","4","5"]},
+     
+    {"name":"Fighter", "hitDice":"10", "armor":"All armor, shields", "weapons": "Simple weapons, martial weapons",
+	    "tools": "None", "savingThrow":["Str", "Con"], "skillAmount":"2", "skillIds":["6","0","1","2","4","5","7","8"]},
+    
+    {"name":"Rogue", "hitDice":"8", "armor":"Light", "weapons": "Simple weapons, hand crossbows, longswords, rapiers, shortswords", "tools": "Thieves' tools", "savingThrow":["Dex", "Int"], "skillAmount":"4", "skillIds":["6","1","8","9", "10", "11", "12", "13", "14", "2", "4"]}
+],
 
-{
-	"skills":[
+"skills":[
 	"Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival", 
-	"Acrobatics", "History", "Insight"
-]}
+	"Acrobatics", "History", "Insight" ,"Deception", "Stealth", "Investigation", 
+    "Performance", "Persuasion", "Sleight of Hand"
+],
 
-{
-	"SpecBarbarian":[
+"SpecBarbarian":[
 	{
 		"Rage":"2",
 		"Descript":""
 	}
-]}
-{
-	"SpecFighter":[
-	{
-		"fightingStyle":[
-		{
-			"Archery":"+2 bonus to rolls you make with ranged weapons",
-			"Defense":"While wearing armor, you gain +1 bonus to AC",
-			"Dueling":"When weilding a melee weapon in one hand and no other weapons, +2 damage rolls with weapon",
-			"GreatWeaponFighting":"You can reroll a 1 or 2 rolled on damage dice with a two handed weapon. You must use new results.",
+],
+
+"SpecFighter":[
+    {
+        "fightingStyle":[
+        {
+        "Archery":"+2 bonus to rolls you make with ranged weapons",
+        "Defense":"While wearing armor, you gain +1 bonus to AC",
+        "Dueling":"When weilding a melee weapon in one hand and no other weapons, +2 damage rolls with weapon",
+        "GreatWeaponFighting":"You can reroll a 1 or 2 rolled on damage dice with a two handed weapon. You must use new results.",
 			"Protection":"If weilding a shield, you can impose disadvantage on attacks that targets another creature within 5 feet of you",
 			"TwoWeaponFighting":"When using two weapon fighting, you can add your ability mod to your off hand weapons damage roll"
 		}],
 		"secondWind":"On your turn, you can use a bonus action to restore 1d10 + (1)fighter level hit points.",
 		"swRestriction":"Once per short/long rest"
 	}
-]}
+]
+}
