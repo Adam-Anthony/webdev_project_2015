@@ -64,9 +64,31 @@ window.onload = function () {
     document.getElementById("incorrectPoints").innerHTML = "You have spent " + getPointsSpent() + "/27 points";
 }
 
+
+
 //Implement a system to check the points and make sure they don't go over before proceeding to next phase.
+
 function nextStep(thisMod) {
     //Grab the values and map out the total spent points
+    
+    if (sessionStorage.getItem("str") == null){
+        sessionStorage.setItem("str", 10);
+    }
+    if (sessionStorage.getItem("dex") == null){
+        sessionStorage.setItem("dex", 10);
+    }
+    if (sessionStorage.getItem("con") == null){
+        sessionStorage.setItem("con", 10);
+    }
+    if (sessionStorage.getItem("cha") == null){
+        sessionStorage.setItem("cha", 10);
+    }
+    if (sessionStorage.getItem("wis") == null){
+        sessionStorage.setItem("wis", 10);
+    }
+    if (sessionStorage.getItem("int") == null){
+        sessionStorage.setItem("int", 10);
+    }
     var points = getPointsSpent();
     
     if (points == 27){
@@ -85,6 +107,11 @@ function nextStep(thisMod) {
 function backStep(modval){
     location.href= "classStats.html";
 }
+
+
+
+//Conversion Methonds and onClicks
+//--------------------------------------
 
 function convertPointBuy(value){
     if(value==8){ return 0;}
