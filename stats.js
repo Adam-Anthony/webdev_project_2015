@@ -1,7 +1,7 @@
 window.onload = function () {
 	var options = "";
     var selected;
-	for (var i = 8; i < 16; i++) {
+	for (var i = 15; i > 7; i--) {
 		if (i===10) {
 			options += "<option selected=\"selected\">"+i+"</option>";
 		} else {
