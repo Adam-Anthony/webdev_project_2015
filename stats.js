@@ -1,3 +1,10 @@
+var classCon = "";
+var classStr = "";
+var classCha = "";
+var classDex = "";
+var classWis = "";
+var classInt = "";
+
 window.onload = function () {
 	var options = "";
     var selected;
@@ -70,11 +77,35 @@ function nextStep(thisMod) {
     var points = getPointsSpent();
     
     if (points == 27){
+		classCon = document.getElementById('conSelect').value;
+		sessionStorage.setItem('classCon', classCon);
+		classStr = document.getElementById('strSelect').value;
+		sessionStorage.setItem('classStr', classStr);
+		classWis = document.getElementById('wisSelect').value;
+		sessionStorage.setItem('classWis', classWis);
+		classInt = document.getElementById('intSelect').value;
+		sessionStorage.setItem('classInt', classInt);
+		classCha = document.getElementById('chaSelect').value;
+		sessionStorage.setItem('classCha', classCha);
+		classDex = document.getElementById('dexSelect').value;
+		sessionStorage.setItem('classDex', classDex);
         location.href = "equipment.html";
     }else if (points <= 27){
         var tmpText = "You have " + (27-points) + " points left.";
         document.getElementById("incorrectPoints").innerHTML = tmpText;
-        if (confirm(tmpText + " Are you sure you want to continue?")){
+        if (confirm(tmpText + " Are you sure you want to continue?")){			
+			classCon = document.getElementById('conSelect').value;
+			sessionStorage.setItem('classCon', classCon);
+			classStr = document.getElementById('strSelect').value;
+			sessionStorage.setItem('classStr', classStr);
+			classWis = document.getElementById('wisSelect').value;
+			sessionStorage.setItem('classWis', classWis);
+			classInt = document.getElementById('intSelect').value;
+			sessionStorage.setItem('classInt', classInt);
+			classCha = document.getElementById('chaSelect').value;
+			sessionStorage.setItem('classCha', classCha);
+			classDex = document.getElementById('dexSelect').value;
+			sessionStorage.setItem('classDex', classDex);
             location.href = "equipment.html";
         }
     }else{
